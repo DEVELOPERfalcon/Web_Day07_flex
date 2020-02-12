@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>shrink</title>
+        <style>
+            .container{
+                display: flex;
+            }
+            .container>div{
+                background-color: aqua;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                line-height: 50px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div>1</div>
+            <div style="flex-shrink: 0;">2</div>    <!-- 브라우저 사이즈를 줄여도 사이즈 변화 없음 -->
+            <div>3</div>
+            <div style="flex-shrink: 1;">4</div>    <!-- 다른 녀석들과 똑같음 -->
+            <div>5</div>
+            <div style="flex-shrink: 2;">6</div>    <!-- 브라우저 사이즈를 줄이면 다른 녀셕들보다 더 많이 줄어듬 -->
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+    </body>
+</html>
